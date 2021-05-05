@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="contextOfDashBoard" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.IJSE.Project.Controller.DashBoardFormController">
+   <children>
+      <Text fill="#c60f0f" fontSmoothingType="LCD" layoutX="123.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POS SYSTEM">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="108.0" fitWidth="136.0" layoutX="29.0" layoutY="146.0" onMouseClicked="#openCustomerForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Customer-image.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="133.0" layoutX="159.0" layoutY="150.0" onMouseClicked="#openItemForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Items-image.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="114.0" fitWidth="149.0" layoutX="300.0" layoutY="147.0" onMouseClicked="#openPlaceOrderForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Order-image].png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="127.0" layoutX="472.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/OrderDetails-image.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="37.0" layoutY="312.0" text="Developed By:- IJSE" textFill="#122ab5">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="312.0" text="Version :- 1.0.0" textFill="#0913a4">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

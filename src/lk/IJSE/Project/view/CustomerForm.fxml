@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextOfCustomerForm" prefHeight="479.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.IJSE.Project.Controller.CustomerFormController">
+   <children>
+      <Label layoutX="225.0" layoutY="14.0" text="Customer Form">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="27.0" layoutY="18.0" mnemonicParsing="false" onAction="#BackToHome" text="Back To Home" textFill="#c61b1b" />
+      <Button layoutX="460.0" layoutY="18.0" mnemonicParsing="false" onAction="#ClickOnActionNewCustomer" text="+ New Customer" textFill="#2361b9" />
+      <TextField fx:id="txtCId" layoutX="14.0" layoutY="82.0" promptText="Customer ID" />
+      <TextField fx:id="txtCustomer" layoutX="215.0" layoutY="82.0" promptText="Customer Name" />
+      <TextField fx:id="txtCSalary" layoutX="417.0" layoutY="82.0" promptText="Customer Salary" />
+      <TextField fx:id="txtCAddress" layoutX="14.0" layoutY="135.0" prefHeight="25.0" prefWidth="449.0" promptText="Customer Address" />
+      <Button fx:id="btnSave" layoutX="484.0" layoutY="135.0" mnemonicParsing="false" onAction="#ClickOnActionSave" text="Save Customer" />
+      <TableView fx:id="tblCustomer" layoutX="18.0" layoutY="236.0" prefHeight="224.0" prefWidth="562.0">
+        <columns>
+          <TableColumn fx:id="tblCusId" prefWidth="75.0" text="Customer ID" />
+          <TableColumn fx:id="tblCusName" prefWidth="113.0" text="Customer Name" />
+            <TableColumn fx:id="tblCusSalary" prefWidth="117.0" text="Customer Salary" />
+            <TableColumn fx:id="tblCusAddress" prefWidth="143.0" text="Customer Address" />
+            <TableColumn fx:id="tblCusOperate" prefWidth="95.0" text="Operate" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="14.0" layoutY="190.0" onKeyReleased="#Search" prefHeight="25.0" prefWidth="562.0" promptText="Search Here" />
+   </children>
+</AnchorPane>
